@@ -45,6 +45,10 @@ public class morpion {
                 }
             }
             else{
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                }
                 botTurn(board);
                 playerTurn = true;
             }
@@ -110,6 +114,7 @@ public class morpion {
     }
 
     private static String[][] botTurn(String[][] board){
+        System.out.println("Tour de l'ordinateur: ");
         Random rand = new Random();
 
         if (board[1][1] == " "){
