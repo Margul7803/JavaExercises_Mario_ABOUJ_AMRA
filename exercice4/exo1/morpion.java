@@ -16,8 +16,6 @@ public class morpion {
             {" "," "," "}
         };
 
-        System.out.println(first);
-
         if(first == 0){
             playerTurn = true;
         }
